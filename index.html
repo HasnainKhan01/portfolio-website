@@ -10,18 +10,37 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>Hi, I'm Shadab Khan!</h1>
-        <p>Welcome to my portfolio website. I am a computer science student with a passion for programming and web development.</p>
-        <p>Feel free to explore my projects and learn more about me!</p>
+        <section class="hero">
+            <h1>Hi, I'm Shadab Khan!</h1>
+            <img src="assets/me.jpg" alt="Shadab Khan" class="profile-pic">
+            <p>Welcome to my portfolio website. I am a computer science student with a passion for programming and web development.</p>
+            <p>Feel free to explore my projects and learn more about me!</p>
+            <a href="#more" class="cta">Learn More</a>
+        </section>
+        
+        <section id="more" class="skills-preview">
+            <h2>What I Do</h2>
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSSL</div>
+                <div class="skill">JavaScript</div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; 2025 Shadab Khan. All rights reserved.</p>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
