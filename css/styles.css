@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 nav ul {
     display: flex;
@@ -88,11 +95,68 @@ nav a.active, nav a:hover {
     border-radius: 5px;;
 }
 
+/* About Section (About Page) */
+.about {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: #f4f4f4;
+}
+  
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 1s ease-in; /* Same animation as homepage */
+}
+  
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+  
+.bio {
+    flex: 2;
+    text-align: left;
+}
+  
+.bio p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+  
+.skills {
+    flex: 1;
+    text-align: left;
+}
+  
+.skills h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+  
+.skills ul {
+    list-style: none;
+}
+  
+.skills li {
+    background: #1a1a1a;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+main {
+    flex: 1 0 auto;
+}
 footer {
     text-align: center;
     padding: 1rem;
     background: #1a1a1a;
     color: white;
+    flex-shrink: 0;
 }
 
 @keyframes fadeIn {
@@ -110,5 +174,15 @@ footer {
     }
     .skills {
         flex-direction: column;
+    }
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .bio, .skills {
+        text-align: center;
+    }
+    .skills ul {
+        padding: 0;
     }
 }
